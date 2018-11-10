@@ -1,7 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
-
+#include "ofxOsc.h"
 #include "ofxXimea.h"
 
 class ofApp : public ofBaseApp
@@ -26,5 +26,7 @@ public:
 
 private:
 	ofxXimea ximeaDeviceHolder;
-		
+	ofxOscSender oscSender;
+
+	void DebugPixels();
 };
